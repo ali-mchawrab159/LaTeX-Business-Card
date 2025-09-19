@@ -1,0 +1,16 @@
+
+name: CI
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: GitHub Action for LaTeX
+
+        uses: xu-cheng/latex-action@4.0.0
